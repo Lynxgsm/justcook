@@ -1,16 +1,21 @@
 # justcook
 
-A new Flutter project.
+It is a simple demo project using Flutter and Tensorflow demonstrated during DevFest Antananarivo 2019.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Just clone the project, and (if necessary) launch `flutter packages get` to get all packages needed for the app.
 
-A few resources to get you started if this is your first Flutter project:
+I assume that code structure is not as optimized as it should be.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## How to
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+In order to get this app running on your computer, you should have <b>python 3.X</b>.
+
+- Open the project and change the variable <i>urlBase</i> from `lib/src/constants/urls.dart` to your IP
+- Open the `api` folder on a command line and use `python3 api.py` to run api server using <b>Flask</b>
+- Finally, launch your project on a device (virtual or physical) using `flutter run`
+
+## Credits
+
+Follow me on [Twitter](https://twitter.com/@FidaAili)
