@@ -1,6 +1,9 @@
 package io.flutter.plugins;
 
 import io.flutter.plugin.common.PluginRegistry;
+import io.flutter.plugins.camera.CameraPlugin;
+import io.flutter.plugins.pathprovider.PathProviderPlugin;
+import sq.flutter.tflite.TflitePlugin;
 
 /**
  * Generated file. Do not edit.
@@ -10,6 +13,9 @@ public final class GeneratedPluginRegistrant {
     if (alreadyRegisteredWith(registry)) {
       return;
     }
+    CameraPlugin.registerWith(registry.registrarFor("io.flutter.plugins.camera.CameraPlugin"));
+    PathProviderPlugin.registerWith(registry.registrarFor("io.flutter.plugins.pathprovider.PathProviderPlugin"));
+    TflitePlugin.registerWith(registry.registrarFor("sq.flutter.tflite.TflitePlugin"));
   }
 
   private static boolean alreadyRegisteredWith(PluginRegistry registry) {
